@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Solo - CUP OF FIRE</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Fondo con logo2 -->
+  <div class="background-logo"></div>
+
+  <!-- Header -->
+  <header class="header-fixed">
+    <div class="header-container">
+      <div class="logo-title">
+        <a href="../index.html">
+          <img src="../img/logo.png" alt="Logo" class="logo">
+        </a>
+        <h1>Batallas Semanales de Free Fire</h1>
+      </div>
+      
+      <nav id="mainNav">
+        <a href="../index.html">Inicio</a>
+        
+        <!-- Menú Modos -->
+        <div class="dropdown">
+          <a href="#">Modos <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+            <a href="../modos/solo.html">Solo</a>
+            <a href="../modos/duo.html">Dúo</a>
+            <a href="../modos/escuadra.html">Escuadra</a>
+            <a href="../modos/duelo.html">Duelo</a>
+          </div>
+        </div>
+        
+        <!-- Menú Ranking -->
+        <div class="dropdown">
+          <a href="#" class="active">Ranking <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+            <a href="#" class="active" id="current-page">Top Solo</a>
+            <a href="duo.html">Top Dúo</a>
+            <a href="escuadra.html">Top Escuadra</a>
+            <a href="duelo.html">Top Duelo</a>
+          </div>
+        </div>
+        
+        <a href="../nosotros.html">Nosotros</a>
+      </nav>
+      
+      <button class="menu-mobile">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="ranking-main">
+    <h2 class="ranking-titulo">TOP SOLO</h2>
+    
+    <!-- Selector de Eventos -->
+    <div class="evento-selector" id="evento-container"></div>
+    
+    <!-- Tabla de Posiciones -->
+    <div class="tabla-container">
+      <table class="tabla-ranking">
+        <thead>
+          <tr>
+            <th>POS</th>
+            <th>NICK</th>
+            <th><i class="fas fa-skull"></i> KILLS</th>
+            <th><i class="fas fa-trophy"></i> BOOYAH</th>
+            <th>PUNTOS</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-datos"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 CUP OF FIRE. Todos los derechos reservados.
+  </footer>
+
+  <!-- WhatsApp Flotante -->
+  <a href="https://wa.me/+51987149670" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/data/ranking-solo.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initRanking(datosSolo, 'Top Solo');
+    });
+  </script>
+</body>
+</html>

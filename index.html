@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUP OF FIRE</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Fondo con logo2 -->
+  <div class="background-logo"></div>
+
+  <!-- Menú Fijo (Del primer código) -->
+  <header class="header-fixed">
+    <div class="header-container">
+      <div class="logo-title">
+        <a href="index.html">
+  <img src="img/logo.png" alt="Logo" class="logo">
+</a>
+
+        <h1>Batallas Semanales de Free Fire</h1>
+      </div>
+      
+      <nav id="mainNav">
+        <a href="index.html" class="active">Inicio</a>
+        
+        <!-- Menú Modos -->
+        <div class="dropdown">
+          <a href="#">Modos <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+            <a href="modos/solo.html">Solo</a>
+            <a href="modos/duo.html">Dúo</a>
+            <a href="modos/escuadra.html">Escuadra</a>
+            <a href="modos/duelo.html">Duelo</a>
+          </div>
+        </div>
+        
+        <!-- Menú Ranking -->
+        <div class="dropdown">
+          <a href="#">Ranking <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+            <a href="ranking/solo.html">Top Solo</a>
+            <a href="ranking/duo.html">Top Dúo</a>
+            <a href="ranking/escuadra.html">Top Escuadra</a>
+            <a href="ranking/duelo.html">Top Duelo</a>
+          </div>
+        </div>
+        
+        <a href="nosotros.html">Nosotros</a>
+      </nav>
+      
+      <button class="menu-mobile">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Contenido Principal (Del segundo código) -->
+  <main class="main-content">
+<h2 class="typing-text"></h2>
+    
+    <div class="modos-container">
+      <div class="modo-card" onclick="location.href='modos/solo.html'">
+        <h3>SOLO</h3>
+        <p>Supervivencia individual</p>
+      </div>
+      <div class="modo-card" onclick="location.href='modos/duo.html'">
+        <h3>DÚO</h3>
+        <p>Cooperación estratégica</p>
+      </div>
+      <div class="modo-card" onclick="location.href='modos/escuadra.html'">
+        <h3>ESCUADRA</h3>
+        <p>Trabajo en equipo</p>
+      </div>
+      <div class="modo-card" onclick="location.href='modos/duelo.html'">
+        <h3>DUELO</h3>
+        <p>4 vs 4 al mejor de 7</p>
+      </div>
+    </div>
+
+    <p class="proxima-copa">Próxima copa: <strong>CUP OF FIRE - SOLOSTRIKE</strong></p>
+  </main>
+
+  <footer>
+    © 2025 CUP OF FIRE. Todos los derechos reservados.
+  </footer>
+
+  <!-- WhatsApp Flotante -->
+  <a href="https://wa.me/+51987149670" class="whatsapp-float" target="_blank">
+    
+  </a>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
