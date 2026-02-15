@@ -1,96 +1,270 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CUP OF FIRE</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="UTF-8">
+<title>Para Marita ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff6f91, #ff9671);
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 48px;
+}
+
+h2 {
+    margin-top: -10px;
+}
+
+.section {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(12px);
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 25px;
+    width: 85%;
+    max-width: 750px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #ff2e63;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#noBtn {
+    position: absolute;
+}
+
+.heart {
+    position: fixed;
+    animation: float 6s linear infinite;
+}
+
+@keyframes float {
+    from {transform: translateY(100vh);}
+    to {transform: translateY(-10vh);}
+}
+
+.carta {
+    display: none;
+    font-size: 18px;
+    margin-top: 20px;
+    animation: fadeIn 2s;
+    line-height: 1.7;
+}
+
+@keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+img {
+    width: 170px;
+    border-radius: 20px;
+    margin: 10px;
+    border: 3px solid white;
+}
+
+/* MAPA */
+.mapa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.ciudad {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.linea {
+    width: 40px;
+    height: 3px;
+    background: white;
+}
+
+.viaje {
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+</style>
 </head>
+
 <body>
-  <!-- Fondo con logo2 -->
-  <div class="background-logo"></div>
 
-  <!-- Menú Fijo (Del primer código) -->
-  <header class="header-fixed">
-    <div class="header-container">
-      <div class="logo-title">
-        <a href="index.html">
-  <img src="img/logo.png" alt="Logo" class="logo">
-</a>
+<!-- Música opcional -->
+<!-- Coloca un archivo llamado cancion.mp3 en la misma carpeta -->
+<audio autoplay loop>
+    <source src="cancion.mp3" type="audio/mpeg">
+</audio>
 
-        <h1>Batallas Semanales de Free Fire</h1>
-      </div>
-      
-      <nav id="mainNav">
-        <a href="index.html" class="active">Inicio</a>
-        
-        <!-- Menú Modos -->
-        <div class="dropdown">
-          <a href="#">Modos <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-content">
-            <a href="modos/solo.html">Solo</a>
-            <a href="modos/duo.html">Dúo</a>
-            <a href="modos/escuadra.html">Escuadra</a>
-            <a href="modos/duelo.html">Duelo</a>
-          </div>
-        </div>
-        
-        <!-- Menú Ranking -->
-        <div class="dropdown">
-          <a href="#">Ranking <i class="fas fa-chevron-down"></i></a>
-          <div class="dropdown-content">
-            <a href="ranking/solo.html">Top Solo</a>
-            <a href="ranking/duo.html">Top Dúo</a>
-            <a href="ranking/escuadra.html">Top Escuadra</a>
-            <a href="ranking/duelo.html">Top Duelo</a>
-          </div>
-        </div>
-        
-        <a href="nosotros.html">Nosotros</a>
-      </nav>
-      
-      <button class="menu-mobile">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </header>
+<h1>❤️ Marita ❤️</h1>
+<h2>Desde Huarmey hasta Piura 💕</h2>
 
-  <!-- Contenido Principal (Del segundo código) -->
-  <main class="main-content">
-<h2 class="typing-text"></h2>
-    
-    <div class="modos-container">
-      <div class="modo-card" onclick="location.href='modos/solo.html'">
-        <h3>SOLO</h3>
-        <p>Supervivencia individual</p>
-      </div>
-      <div class="modo-card" onclick="location.href='modos/duo.html'">
-        <h3>DÚO</h3>
-        <p>Cooperación estratégica</p>
-      </div>
-      <div class="modo-card" onclick="location.href='modos/escuadra.html'">
-        <h3>ESCUADRA</h3>
-        <p>Trabajo en equipo</p>
-      </div>
-      <div class="modo-card" onclick="location.href='modos/duelo.html'">
-        <h3>DUELO</h3>
-        <p>4 vs 4 al mejor de 7</p>
-      </div>
+<div class="section">
+    <h3>🎮 Nuestra Historia</h3>
+    <p>Nos conocimos jugando Free 🎮</p>
+    <p>El 8 de noviembre me hablaste por WhatsApp 📱</p>
+    <p>Y el 13 de noviembre te pedí que seas mi pareja 💍</p>
+    <p>Hoy ya llevamos 3 meses y 1 día juntos ❤️</p>
+</div>
+
+<div class="section">
+    <h3>⏳ Tiempo juntos</h3>
+    <p id="contador"></p>
+</div>
+
+<div class="section">
+    <h3>✈️ De Huarmey hasta Piura</h3>
+    <p>Porque aunque haya distancia… el amor sabe el camino ❤️</p>
+
+    <div class="mapa">
+        <div class="ciudad">Huarmey 🧍‍♂️</div>
+        <div class="linea"></div>
+        <div class="ciudad">Chimbote</div>
+        <div class="linea"></div>
+        <div class="ciudad">Trujillo</div>
+        <div class="linea"></div>
+        <div class="ciudad">Piura 🧍‍♀️</div>
     </div>
 
-    <p class="proxima-copa">Próxima copa: <strong>CUP OF FIRE - SOLOSTRIKE</strong></p>
-  </main>
+    <div class="viaje" id="viajeTexto"></div>
 
-  <footer>
-    © 2025 CUP OF FIRE. Todos los derechos reservados.
-  </footer>
+    <button onclick="iniciarViaje()">Iniciar viaje hacia Marita</button>
+</div>
 
-  <!-- WhatsApp Flotante -->
-  <a href="https://wa.me/+51987149670" class="whatsapp-float" target="_blank">
-    
-  </a>
+<div class="section">
+    <h3>📸 Nosotros</h3>
+    <p>Aunque somos a distancia… pronto nos veremos este mes ✈️❤️</p>
+    <p>Aquí irán nuestras fotos cuando ya no sea solo pantalla 💕</p>
+</div>
 
-  <script src="assets/js/script.js"></script>
+<div class="section">
+    <h3>💌 Carta para ti</h3>
+    <button onclick="abrirCarta()">Abrir carta</button>
+    <div class="carta" id="cartaTexto">
+        Marita… ❤️<br><br>
+
+        Quién diría que todo empezó en un juego.  
+        Entre partidas de Free, risas y momentos simples, encontré algo que no estaba buscando… pero que ahora no quiero perder. 🎮💖<br><br>
+
+        El 8 de noviembre me hablaste por WhatsApp y sin darnos cuenta empezamos a escribir nuestra propia historia.  
+        El 13 de noviembre se volvió una fecha especial, porque ese día oficialmente comenzamos lo nuestro. 💍<br><br>
+
+        No llevamos años… solo 3 meses y 1 día.  
+        Pero lo que siento no se mide en tiempo, se mide en lo especial que haces mis días. ❤️<br><br>
+
+        Somos Huarmey y Piura…  
+        y para llegar a ti tendría que pasar por Chimbote, Trujillo…  
+        pero si el destino es verte, recorrería cada kilómetro feliz. ✈️💕<br><br>
+
+        Y lo más bonito es que pronto, este mes, por fin nos veremos en persona.  
+        Ya no será solo pantalla, llamadas o mensajes… será real. ❤️<br><br>
+
+        Tal vez nuestra historia empezó en un juego,  
+        pero lo que siento por ti es completamente real.  
+
+        Gracias por estar conmigo.  
+        Y quiero que esto no se quede en 3 meses…  
+        quiero que siga creciendo contigo. 💖
+    </div>
+</div>
+
+<div class="section">
+    <h3>Pregunta importante 😏</h3>
+    <p>¿Quieres seguir construyendo esta historia conmigo?</p>
+    <button onclick="respuestaSi()">Sí 💖</button>
+    <button id="noBtn" onmouseover="moverNo()">No 😅</button>
+</div>
+
+<script>
+
+/* CONTADOR */
+let inicio = new Date("November 13, 2025 00:00:00").getTime();
+
+setInterval(function() {
+    let ahora = new Date().getTime();
+    let diferencia = ahora - inicio;
+
+    let dias = Math.floor(diferencia / (1000*60*60*24));
+    let horas = Math.floor((diferencia / (1000*60*60)) % 24);
+
+    document.getElementById("contador").innerHTML =
+    dias + " días y " + horas + " horas juntos ❤️";
+}, 1000);
+
+/* VIAJE */
+function iniciarViaje() {
+    const texto = document.getElementById("viajeTexto");
+    const ciudades = ["Huarmey 💙", "Chimbote 💫", "Trujillo ✨", "Piura ❤️"];
+    let i = 0;
+
+    texto.innerHTML = "Preparando viaje... ✈️";
+
+    let intervalo = setInterval(() => {
+        texto.innerHTML = "❤️ llegando a " + ciudades[i];
+        i++;
+
+        if (i >= ciudades.length) {
+            clearInterval(intervalo);
+            texto.innerHTML = "❤️ Ya llegué contigo, Marita 💕";
+        }
+    }, 1500);
+}
+
+/* CARTA */
+function abrirCarta(){
+    document.getElementById("cartaTexto").style.display = "block";
+}
+
+/* BOTÓN NO */
+function moverNo(){
+    let btn = document.getElementById("noBtn");
+    btn.style.top = Math.random()*80 + "vh";
+    btn.style.left = Math.random()*80 + "vw";
+}
+
+/* RESPUESTA SI */
+function respuestaSi(){
+    alert("Sabía que dirías que sí 😘❤️ Gracias por estos meses, Marita.");
+}
+
+/* CORAZONES */
+setInterval(() => {
+    let heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = Math.random() * 25 + 20 + "px";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 6000);
+}, 400);
+
+</script>
+
 </body>
 </html>
