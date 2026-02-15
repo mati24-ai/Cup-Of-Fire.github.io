@@ -2,57 +2,94 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Para Marita ❤️</title>
 
 <style>
+
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #ff6f91, #ff9671);
     text-align: center;
     color: white;
     overflow-x: hidden;
 }
 
+/* TITULOS GRANDES */
 h1 {
-    margin-top: 40px;
-    font-size: 48px;
+    font-size: 40px;
+    margin-top: 30px;
 }
 
-h2 {
-    margin-top: -10px;
+h2, h3 {
+    font-size: 26px;
 }
 
+p {
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+/* SECCIONES */
 .section {
     background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(12px);
-    margin: 25px auto;
+    backdrop-filter: blur(10px);
+    margin: 20px;
     padding: 30px;
     border-radius: 25px;
-    width: 85%;
-    max-width: 750px;
 }
 
+/* BOTONES */
 button {
-    padding: 12px 25px;
+    padding: 14px 26px;
     border: none;
     border-radius: 30px;
     background: #ff2e63;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
-    transition: 0.3s;
     margin: 10px;
 }
 
-button:hover {
-    transform: scale(1.1);
+button:active {
+    transform: scale(0.95);
 }
 
 #noBtn {
     position: absolute;
 }
 
+/* MAPA */
+.mapa {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.viaje {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* CARTA */
+.carta {
+    display: none;
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 1.9;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* CORAZONES */
 .heart {
     position: fixed;
     animation: float 6s linear infinite;
@@ -63,71 +100,36 @@ button:hover {
     to {transform: translateY(-10vh);}
 }
 
-.carta {
-    display: none;
-    font-size: 18px;
-    margin-top: 20px;
-    animation: fadeIn 2s;
-    line-height: 1.7;
-}
-
-@keyframes fadeIn {
-    from {opacity:0;}
-    to {opacity:1;}
-}
-
-img {
-    width: 170px;
-    border-radius: 20px;
-    margin: 10px;
-    border: 3px solid white;
-}
-
-/* MAPA */
-.mapa {
+/* BOTÓN MÚSICA FLOTANTE */
+.music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff2e63;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
 
-.ciudad {
-    margin: 10px;
-    font-weight: bold;
-}
-
-.linea {
-    width: 40px;
-    height: 3px;
-    background: white;
-}
-
-.viaje {
-    font-size: 22px;
-    margin-top: 20px;
-    font-weight: bold;
-}
 </style>
 </head>
 
 <body>
 
-<!-- Música opcional -->
-<!-- Coloca un archivo llamado cancion.mp3 en la misma carpeta -->
-<audio autoplay loop>
-    <source src="cancion.mp3" type="audio/mpeg">
-</audio>
-
 <h1>❤️ Marita ❤️</h1>
-<h2>Desde Huarmey hasta Piura 💕</h2>
+<h2>Huarmey ➜ Piura 💕</h2>
 
 <div class="section">
-    <h3>🎮 Nuestra Historia</h3>
-    <p>Nos conocimos jugando Free 🎮</p>
-    <p>El 8 de noviembre me hablaste por WhatsApp 📱</p>
-    <p>Y el 13 de noviembre te pedí que seas mi pareja 💍</p>
-    <p>Hoy ya llevamos 3 meses y 1 día juntos ❤️</p>
+    <p>🎮 Nos conocimos jugando Free</p>
+    <p>📱 8 de noviembre me hablaste</p>
+    <p>💍 13 de noviembre empezamos</p>
+    <p>❤️ 3 meses y 1 día juntos</p>
 </div>
 
 <div class="section">
@@ -136,67 +138,67 @@ img {
 </div>
 
 <div class="section">
-    <h3>✈️ De Huarmey hasta Piura</h3>
-    <p>Porque aunque haya distancia… el amor sabe el camino ❤️</p>
-
+    <h3>✈️ El viaje hacia ti</h3>
     <div class="mapa">
-        <div class="ciudad">Huarmey 🧍‍♂️</div>
-        <div class="linea"></div>
-        <div class="ciudad">Chimbote</div>
-        <div class="linea"></div>
-        <div class="ciudad">Trujillo</div>
-        <div class="linea"></div>
-        <div class="ciudad">Piura 🧍‍♀️</div>
+        <div>Huarmey 💙</div>
+        <div>⬇</div>
+        <div>Chimbote 💫</div>
+        <div>⬇</div>
+        <div>Trujillo ✨</div>
+        <div>⬇</div>
+        <div>Piura ❤️</div>
     </div>
 
     <div class="viaje" id="viajeTexto"></div>
-
-    <button onclick="iniciarViaje()">Iniciar viaje hacia Marita</button>
+    <button onclick="iniciarViaje()">Iniciar viaje ❤️</button>
 </div>
 
 <div class="section">
-    <h3>📸 Nosotros</h3>
-    <p>Aunque somos a distancia… pronto nos veremos este mes ✈️❤️</p>
-    <p>Aquí irán nuestras fotos cuando ya no sea solo pantalla 💕</p>
-</div>
-
-<div class="section">
-    <h3>💌 Carta para ti</h3>
+    <h3>💌 Carta</h3>
     <button onclick="abrirCarta()">Abrir carta</button>
+
     <div class="carta" id="cartaTexto">
-        Marita… ❤️<br><br>
+        Marita ❤️<br><br>
 
-        Quién diría que todo empezó en un juego.  
-        Entre partidas de Free, risas y momentos simples, encontré algo que no estaba buscando… pero que ahora no quiero perder. 🎮💖<br><br>
+        Quién diría que todo empezó en un juego 🎮.  
+        Entre partidas, risas y momentos simples, encontré algo real… algo que no estaba buscando pero que ahora no quiero perder. 💖<br><br>
 
-        El 8 de noviembre me hablaste por WhatsApp y sin darnos cuenta empezamos a escribir nuestra propia historia.  
-        El 13 de noviembre se volvió una fecha especial, porque ese día oficialmente comenzamos lo nuestro. 💍<br><br>
+        El 8 de noviembre comenzamos a hablar por WhatsApp 📱,  
+        y el 13 de noviembre nuestra historia se volvió oficial 💍.  
+        Desde ese día cada conversación, cada llamada y cada mensaje se volvió especial.<br><br>
 
         No llevamos años… solo 3 meses y 1 día.  
-        Pero lo que siento no se mide en tiempo, se mide en lo especial que haces mis días. ❤️<br><br>
+        Pero lo que siento no se mide en tiempo,  
+        se mide en lo feliz que me haces y en lo mucho que sonrío cuando pienso en ti. ❤️<br><br>
 
         Somos Huarmey y Piura…  
-        y para llegar a ti tendría que pasar por Chimbote, Trujillo…  
-        pero si el destino es verte, recorrería cada kilómetro feliz. ✈️💕<br><br>
+        y para llegar a ti tendría que pasar por Chimbote, Trujillo y muchos kilómetros más.  
+        Pero si el destino es verte, recorrería cada uno de ellos feliz. ✈️💕<br><br>
 
-        Y lo más bonito es que pronto, este mes, por fin nos veremos en persona.  
-        Ya no será solo pantalla, llamadas o mensajes… será real. ❤️<br><br>
+        Lo más bonito es que pronto nos veremos en persona este mes.  
+        Ya no será solo pantalla… será real, frente a frente.  
+        Y estoy seguro de que ese momento valdrá cada segundo de espera. 💕<br><br>
 
         Tal vez nuestra historia empezó en un juego,  
         pero lo que siento por ti es completamente real.  
-
-        Gracias por estar conmigo.  
-        Y quiero que esto no se quede en 3 meses…  
-        quiero que siga creciendo contigo. 💖
+        Y quiero que esto siga creciendo contigo. ❤️
     </div>
 </div>
 
 <div class="section">
     <h3>Pregunta importante 😏</h3>
-    <p>¿Quieres seguir construyendo esta historia conmigo?</p>
+    <p>¿Seguimos construyendo esta historia juntos?</p>
     <button onclick="respuestaSi()">Sí 💖</button>
     <button id="noBtn" onmouseover="moverNo()">No 😅</button>
 </div>
+
+<!-- AUDIO -->
+<audio id="musica" loop>
+    <source src="cancion.mp3" type="audio/mpeg">
+</audio>
+
+<!-- BOTÓN FLOTANTE -->
+<div class="music-btn" onclick="reproducirMusica()">🎵</div>
 
 <script>
 
@@ -206,12 +208,9 @@ let inicio = new Date("November 13, 2025 00:00:00").getTime();
 setInterval(function() {
     let ahora = new Date().getTime();
     let diferencia = ahora - inicio;
-
     let dias = Math.floor(diferencia / (1000*60*60*24));
-    let horas = Math.floor((diferencia / (1000*60*60)) % 24);
-
     document.getElementById("contador").innerHTML =
-    dias + " días y " + horas + " horas juntos ❤️";
+    dias + " días juntos ❤️";
 }, 1000);
 
 /* VIAJE */
@@ -220,15 +219,12 @@ function iniciarViaje() {
     const ciudades = ["Huarmey 💙", "Chimbote 💫", "Trujillo ✨", "Piura ❤️"];
     let i = 0;
 
-    texto.innerHTML = "Preparando viaje... ✈️";
-
     let intervalo = setInterval(() => {
-        texto.innerHTML = "❤️ llegando a " + ciudades[i];
+        texto.innerHTML = "❤️ Llegando a " + ciudades[i];
         i++;
-
         if (i >= ciudades.length) {
             clearInterval(intervalo);
-            texto.innerHTML = "❤️ Ya llegué contigo, Marita 💕";
+            texto.innerHTML = "❤️ Ya estoy contigo 💕";
         }
     }, 1500);
 }
@@ -247,7 +243,7 @@ function moverNo(){
 
 /* RESPUESTA SI */
 function respuestaSi(){
-    alert("Sabía que dirías que sí 😘❤️ Gracias por estos meses, Marita.");
+    alert("Sabía que dirías que sí 😘❤️");
 }
 
 /* CORAZONES */
@@ -262,7 +258,12 @@ setInterval(() => {
     setTimeout(() => {
         heart.remove();
     }, 6000);
-}, 400);
+}, 500);
+
+/* MÚSICA */
+function reproducirMusica(){
+    document.getElementById("musica").play();
+}
 
 </script>
 
